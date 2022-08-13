@@ -2,7 +2,7 @@
   "name": "backend-nodeJs-e-typescript-typeORM",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/AllisonVinicius/backend-nodeJs-e-typescript-typeORM.git",
+  "repository": "https://github.com/allison-araujo/backend-nodeJs-e-typescript-typeORM.git",
   "author": "allisonvinicius <allisonvinicius63@gmail.com>",
   "license": "MIT",
   "scripts": {
