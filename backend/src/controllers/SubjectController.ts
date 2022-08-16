@@ -1,4 +1,5 @@
 import { Request, Response } from "express";
+import { subjectRepository } from "../repositories/subjectRepositories";
 export class SubjectController {
   async create(req: Request, res: Response) {
     const { name } = req.body;
@@ -8,6 +9,7 @@ export class SubjectController {
     }
 
     try {
+      const newSubject = subjectRepository.create({ name });
     } catch (error) {
       console.log(error);
 
