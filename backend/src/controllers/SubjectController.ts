@@ -10,6 +10,9 @@ export class SubjectController {
 
     try {
       const newSubject = subjectRepository.create({ name });
+      await subjectRepository.save(newSubject);
+
+      return res.status(201).json(newSubject);
     } catch (error) {
       console.log(error);
 
