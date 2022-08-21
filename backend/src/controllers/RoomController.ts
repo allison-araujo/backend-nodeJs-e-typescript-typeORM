@@ -56,10 +56,12 @@ export class RoomController {
       if (!subject) {
         return res.status(404).json({ message: "Not Found Exists subject" });
       }
-      await roomRepository.update(id, {
+
+      const roomUpdate = {
         ...room,
         subjects: [subject],
-      });
+      };
+      await roomRepository.save(roomUpdate);
 
       return res.status(200).json(room);
     } catch (error) {
