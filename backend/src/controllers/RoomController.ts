@@ -54,7 +54,7 @@ export class RoomController {
         id: Number(subject_id),
       });
       if (!subject) {
-        return res.status(404).json({ message: "Not Found Exists Disciplina" });
+        return res.status(404).json({ message: "Not Found Exists subject" });
       }
       await roomRepository.update(id, {
         ...room,
